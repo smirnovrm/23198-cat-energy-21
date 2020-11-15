@@ -32,16 +32,25 @@
         <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="page-main__form form" action="echo.htmlacademy.ru" method="post">
-        <div class="form__basic-info">
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Информация о питомце</legend>
           <div class="form__wrapper">
             <label class="form__label" for="pet_name">Имя:<sup class="form__required">*</sup></label>
-            <input class="form__input" name="pet_name" id='pet_name' type="text">
+            <input class="form__input-text" name="pet_name" id='pet_name' type="text">
             <label class="form__label" for="pet_weight">Вес (кг):<sup class="form__required">*</sup></label>
-            <input class="form__input" name="pet_weight" id='pet_weight' type="text">
+            <input class="form__input-text" name="pet_weight" id='pet_weight' type="text">
             <label class="form__label" for="pet_age">Возраст (лет):</label>
-            <input class="form__input" name="pet_age" id='pet_age' type="text">
+            <input class="form__input-text" name="pet_age" id='pet_age' type="text">
           </div>
-        </div>
+        </fieldset>
+        <fieldset class="form__fieldset">
+          <legend class="visually-hidden">Выбор программы</legend>
+          <div class="form__wrapper">
+            <input class="form__input-radio" type="radio" name='programm' id='slim' value="slim"><label class="form__label" for='slim'>Похудение</label>
+            <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight"><label class="form__label" for='weight'>Набор массы</label>
+            <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm"><label class="form__label" for='no_programm'>Не знаю (Нужен ваш совет)</label>
+          </div>
+        </fieldset>
       </form>
       <section class="map-and-contact">
         <h2 class="visually-hidden">Контакты и карта проезда</h2>
