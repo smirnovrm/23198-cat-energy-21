@@ -36,9 +36,9 @@
           <legend class="visually-hidden">Информация о питомце</legend>
           <div class="form__wrapper">
             <label class="form__label" for="pet_name">Имя:<sup class="form__required">*</sup></label>
-            <input class="form__input-text" name="pet_name" id='pet_name' type="text">
+            <input class="form__input-text" name="pet_name" id='pet_name' type="text" required>
             <label class="form__label" for="pet_weight">Вес (кг):<sup class="form__required">*</sup></label>
-            <input class="form__input-text" name="pet_weight" id='pet_weight' type="text">
+            <input class="form__input-text" name="pet_weight" id='pet_weight' type="text" required>
             <label class="form__label" for="pet_age">Возраст (лет):</label>
             <input class="form__input-text" name="pet_age" id='pet_age' type="text">
           </div>
@@ -49,6 +49,15 @@
             <input class="form__input-radio" type="radio" name='programm' id='slim' value="slim"><label class="form__label" for='slim'>Похудение</label>
             <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight"><label class="form__label" for='weight'>Набор массы</label>
             <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm"><label class="form__label" for='no_programm'>Не знаю (Нужен ваш совет)</label>
+          </div>
+        </fieldset>
+        <fieldset class="form__fieldset form__fieldset--with-title">
+          <legend class="form__legend">Контактные данные (владельца кота)</legend>
+          <div class="form__wrapper">
+            <label class="form__label" for="email">E-mail:<sup class="form__required">*</sup></label>
+            <input class="form__input-text form__input-text--icon-mail" name="email" id='email' type="email" required>
+            <label class="form__label" for="phone">Телефон:<sup class="form__required">*</sup></label>
+            <input class="form__input-text form__input-text--icon-phone" name="phone" id='phone' type="text" required>
           </div>
         </fieldset>
       </form>
