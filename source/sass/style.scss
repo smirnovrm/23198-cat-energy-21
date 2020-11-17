@@ -1,2 +1,4 @@
 // Начните писать стили здесь
-body { background: tomato; }
+@import 'fonts';
+@import 'variables';
+@import 'blocks/page';
