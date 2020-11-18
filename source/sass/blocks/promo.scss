@@ -1,0 +1,55 @@
+.promo {
+  padding-top: 27px;
+
+  background-color: $basic-white;
+  background-image: url('https://via.placeholder.com/320x302');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.promo__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 320px;
+  margin: 0 auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.promo__heading {
+  margin: 0;
+
+  font-family: $special-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+  color: $basic-white;
+}
+
+.promo__slogan {
+  margin: 0;
+  margin-top: 25px;
+
+  font-family: $special-font-family;
+
+  font-weight: 400;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  color: $basic-white;
+}
+
+.promo__picture {
+  margin-top: 30px;
+}
+
+.promo__choose-programm {
+  background-color: $basic-green;
+}
