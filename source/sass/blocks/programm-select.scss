@@ -27,7 +27,6 @@
 }
 
 .programm-select__heading {
-
   margin: 0;
 
   font-family: $special-font-family;
@@ -53,7 +52,7 @@
 }
 
 .programm-select__excerpt::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 1px;
@@ -61,7 +60,6 @@
   margin-top: 23px;
 
   background-color: #d9d9d9;
-
 }
 
 .programm-select__link {
@@ -88,11 +86,11 @@
 }
 
 .programm-select__link::after {
-  content: '';
+  content: "";
   display: block;
 
   width: 32px;
   height: 10px;
 
-  background-image: url('https://via.placeholder.com/32x10');
+  background-image: url("https://via.placeholder.com/32x10");
 }
