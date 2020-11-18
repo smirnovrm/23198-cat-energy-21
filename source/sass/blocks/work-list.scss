@@ -1,0 +1,33 @@
+.work-list {
+ @include list-style;
+}
+
+.work-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-family: $basic-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $special-dark-gray;
+}
+
+.work-list__item::before {
+  content: '';
+  display: flex;
+  margin-right: 20px;
+
+  min-width: 60px;
+  height: 60px;
+
+  background-color: $basic-green;
+
+}
+
+.work-list__item + .work-list__item {
+  margin-top: 20px;
+}
