@@ -1,0 +1,49 @@
+.live-example {
+  margin-top: 42px;
+  padding-bottom: 30px;
+  background-color: #eaeaea;
+}
+
+.live-example__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  padding-top: 27px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.live-example__heading {
+  margin: 0;
+
+  font-family: $special-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+
+  color: $basic-dark;
+}
+
+.live-example__text {
+  margin: 0;
+  margin-top: 33px;
+
+  width: 95%;
+
+  font-family: $basic-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: $special-dark-gray;
+}
+
+.live-example__stats {
+  margin-top: 25px;
+}
+
+.live-example__slider {
+  margin-top: 42px;
+}
