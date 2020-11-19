@@ -1,0 +1,20 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__company {
+  font-family: $basic-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+
+  color: $special-dark-gray;
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+}

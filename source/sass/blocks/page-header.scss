@@ -1,0 +1,33 @@
+.page-header {
+  background-color: $basic-white;
+}
+
+.page-header__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+
+.page-header__toogle {
+  width: 30px;
+  height: 30px;
+
+  align-self: center;
+
+  background-image: url("../img/icon_menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $basic-white;
+
+  border: none;
+}
+
+.page-header__navigation {
+  width: 100%;
+}

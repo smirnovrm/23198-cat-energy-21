@@ -1,0 +1,22 @@
+.menu-list {
+  @include list-style;
+
+  font-family: $special-font-family;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.menu-list__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.menu-list__item a {
+  color: $basic-dark;
+  text-decoration: none;
+}

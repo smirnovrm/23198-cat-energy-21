@@ -1,0 +1,22 @@
+.slider__list {
+  @include list-style;
+}
+
+.slider__switchers {
+  margin: 0;
+  margin-top: 27px;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: $special-font-family;
+  font-size: 16px;
+  line-height: 20px;
+
+  text-transform: uppercase;
+}
+
+.slider__switcher {
+  margin-left: 12px;
+  margin-right: 12px;
+}
