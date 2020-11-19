@@ -27,6 +27,9 @@
 }
 
 .programm-select__heading {
+  display: flex;
+  align-items: center;
+
   margin: 0;
 
   font-family: $special-font-family;
@@ -36,6 +39,30 @@
   text-align: center;
   text-transform: uppercase;
   color: $basic-dark;
+}
+
+.programm-select__heading::before {
+  content: "";
+
+  background-repeat: no-repeat;
+}
+
+.programm-select__heading--slim::before {
+  margin-right: 19px;
+
+  width: 50px;
+  height: 53px;
+
+  background-image: url("../img/icon_cat-slim.svg");
+}
+
+.programm-select__heading--pro::before {
+  margin-right: 11px;
+
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../img/icon_cat-weight.svg");
 }
 
 .programm-select__excerpt {
@@ -90,7 +117,7 @@
   display: block;
 
   width: 32px;
-  height: 10px;
+  height: 11px;
 
-  background-image: url("https://via.placeholder.com/32x10");
+  background-image: url("../img/icon_arrow.svg");
 }

@@ -19,6 +19,13 @@
   height: 30px;
 
   align-self: center;
+
+  background-image: url("../img/icon_menu-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $basic-white;
+
+  border: none;
 }
 
 .page-header__navigation {

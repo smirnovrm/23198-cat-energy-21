@@ -19,5 +19,18 @@
   width: 22px;
   height: 22px;
 
-  background-color: $special-gray;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social__link--vk {
+  background-image: url("../img/icon_vkontakte.svg");
+}
+
+.social__link--insta {
+  background-image: url("../img/icon_instagram.svg");
+}
+
+.social__link--fb {
+  background-image: url("../img/icon_facebook.svg");
 }

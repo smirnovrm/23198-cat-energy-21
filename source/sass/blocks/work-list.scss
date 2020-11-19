@@ -24,9 +24,27 @@
   min-width: 60px;
   height: 60px;
 
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: $basic-green;
 }
 
 .work-list__item + .work-list__item {
   margin-top: 20px;
+}
+
+.work-list__item--nutrients::before {
+  background-image: url("../img/icon_leaf.svg");
+}
+
+.work-list__item--cooking::before {
+  background-image: url("../img/icon_tub.svg");
+}
+
+.work-list__item--replacement::before {
+  background-image: url("../img/icon_eat.svg");
+}
+
+.work-list__item--month::before {
+  background-image: url("../img/icon_alarm.svg");
 }
