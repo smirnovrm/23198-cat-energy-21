@@ -86,6 +86,14 @@
   color: $special-dark-gray;
 }
 
+.form__fieldset:nth-child(2) .form__label {
+  color: $special-dark-gray-2;
+}
+
+.form__fieldset:nth-child(5) .form__label {
+  color: $basic-dark;
+}
+
 .form__label + .form__label {
   margin-top: 13px;
 }
@@ -112,6 +120,8 @@
 
   text-transform: uppercase;
   font-family: $special-font-family;
+  font-size: 16px;
+  line-height: 18px;
 
   color: $special-dark-gray;
 
@@ -151,12 +161,17 @@
   border: 1px solid #e7e7e7;
 
   font-family: $special-font-family;
+  font-size: 16px;
+  line-height: 18px;
   text-transform: uppercase;
   color: $special-dark-gray;
 }
 
 .form__submit {
   margin-top: 12px;
+
+  font-size: 16px;
+  line-height: 20px;
 
   background-color: $basic-green;
 }
