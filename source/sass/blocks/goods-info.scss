@@ -1,0 +1,22 @@
+.goods-info {
+  font-family: $basic-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: $special-dark-gray;
+}
+
+.goods-info__body {
+  border-collapse: collapse;
+}
+
+.goods-info__cell {
+  text-align: right;
+}
+
+.goods-info__cell:nth-child(1) {
+  text-align: left;
+  font-weight: 400;
+}
