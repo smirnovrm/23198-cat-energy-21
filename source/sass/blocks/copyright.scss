@@ -12,6 +12,10 @@
   line-height: 18px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    margin-right: 22px;
+  }
 }
 
 .copyright__logo {

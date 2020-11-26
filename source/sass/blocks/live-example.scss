@@ -2,6 +2,14 @@
   margin-top: 42px;
   padding-bottom: 30px;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    border-top: 1px solid #e6e6e6;
+
+    margin-top: 41px;
+    padding-bottom: 0;
+    background-color: $basic-white;
+  }
 }
 
 .live-example__wrapper {
@@ -11,6 +19,15 @@
   padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    padding-top: 43px;
+    padding-left: 0;
+    padding-right: 0;
+
+    width: 709px;
+    margin: 0 auto;
+  }
 }
 
 .live-example__heading {
@@ -23,6 +40,11 @@
   line-height: 40px;
 
   color: $basic-dark;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .live-example__text {
@@ -38,12 +60,34 @@
   line-height: 18px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    margin-top: 63px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .live-example__stats {
   margin-top: 25px;
+
+  @media (min-width: $tablet) {
+    margin-top: 54px;
+  }
 }
 
 .live-example__slider {
   margin-top: 42px;
+
+  @media (min-width: $tablet) {
+    margin-top: 250px;
+  }
+}
+
+.live-example__slider .live-example__wrapper {
+  @media (min-width: $tablet) {
+    padding-top: 6px;
+    padding-bottom: 67px;
+  }
 }

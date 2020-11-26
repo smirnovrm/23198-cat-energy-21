@@ -1,5 +1,10 @@
 .contacts {
   display: flex;
+
+  @media (min-width: $tablet) {
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .contacts--inner-page {
@@ -18,6 +23,13 @@
   text-transform: uppercase;
 
   color: #111111;
+
+  @media (min-width: $tablet) {
+    width: 160px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 .contacts__address {
@@ -30,4 +42,21 @@
   line-height: 20px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: right;
+  }
+}
+
+.contacts__address span {
+  @media (min-width: $tablet) {
+    margin-top: 20px;
+  }
 }

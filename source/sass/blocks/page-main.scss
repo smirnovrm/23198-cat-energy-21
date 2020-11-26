@@ -8,6 +8,13 @@
 
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    width: 709px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .page-main__wrapper--inner {

@@ -1,0 +1,14 @@
+.map {
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
+}
+
+.map img {
+  @media (min-width: $tablet) {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+}

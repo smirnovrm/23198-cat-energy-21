@@ -1,5 +1,13 @@
 .work-list {
   @include list-style;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    row-gap: 37px;
+  }
 }
 
 .work-list__item {
@@ -14,6 +22,20 @@
   line-height: 18px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    padding-top: 40px;
+    padding-bottom: 57px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    background-repeat: no-repeat;
+  }
 }
 
 .work-list__item::before {
@@ -27,10 +49,66 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: $basic-green;
+
+  @media (min-width: $tablet) {
+    margin-right: 0;
+    margin-bottom: 31px;
+
+    min-width: 80px;
+    height: 80px;
+  }
 }
 
 .work-list__item + .work-list__item {
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+}
+
+.work-list__item--nutrients {
+  @media (min-width: $tablet) {
+    width: 230px;
+
+    padding-right: 29px;
+
+    background-image: url("../img/one.svg");
+    background-position: right 34px bottom 13px;
+  }
+}
+
+.work-list__item--cooking {
+  @media (min-width: $tablet) {
+    width: 246px;
+
+    padding-right: 19px;
+
+    background-image: url("../img/two.svg");
+    background-position: right 16px bottom 13px;
+  }
+}
+
+.work-list__item--replacement {
+  @media (min-width: $tablet) {
+    width: 247px;
+
+    padding-right: 38px;
+
+    background-image: url("../img/three.svg");
+    background-position: right 12px bottom 11px;
+  }
+}
+
+.work-list__item--month {
+  @media (min-width: $tablet) {
+    width: 249px;
+
+    padding-right: 4px;
+
+    background-image: url("../img/four.svg");
+    background-position: right 5px bottom 13px;
+  }
 }
 
 .work-list__item--nutrients::before {

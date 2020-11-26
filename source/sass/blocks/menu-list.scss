@@ -1,11 +1,19 @@
 .menu-list {
   @include list-style;
 
+  display: flex;
+  flex-direction: column;
+
   font-family: $special-font-family;
 
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    font-weight: 400;
+  }
 }
 
 .menu-list__item {
@@ -14,6 +22,15 @@
 
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+
+    &:not(:first-child) {
+      margin-left: 35px;
+    }
+  }
 }
 
 .menu-list__item a {
