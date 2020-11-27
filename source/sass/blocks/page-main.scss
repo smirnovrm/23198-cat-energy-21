@@ -15,6 +15,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
 }
 
 .page-main__wrapper--inner {

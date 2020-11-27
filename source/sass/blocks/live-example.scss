@@ -10,6 +10,28 @@
     padding-bottom: 0;
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop) {
+    display: flex;
+
+    margin-top: 205px;
+
+    border-top: none;
+
+    padding-left: 55px;
+    padding-right: 55px;
+
+    background-color: #eaeaea;
+  }
+}
+
+.live-example__inner {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+
+    display: flex;
+  }
 }
 
 .live-example__wrapper {
@@ -26,7 +48,12 @@
     padding-right: 0;
 
     width: 709px;
-    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 50%;
+
+    padding-top: 0;
   }
 }
 
@@ -44,6 +71,10 @@
   @media (min-width: $tablet) {
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -125px;
   }
 }
 
@@ -67,6 +98,12 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 133px;
+
+    max-width: 436px;
+  }
 }
 
 .live-example__stats {
@@ -75,6 +112,10 @@
   @media (min-width: $tablet) {
     margin-top: 54px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 366px;
+  }
 }
 
 .live-example__slider {
@@ -82,6 +123,10 @@
 
   @media (min-width: $tablet) {
     margin-top: 250px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 0;
   }
 }
 

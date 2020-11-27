@@ -5,6 +5,12 @@
     justify-content: space-between;
     align-items: flex-start;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 570px;
+
+    background-color: $basic-white;
+  }
 }
 
 .contacts--inner-page {

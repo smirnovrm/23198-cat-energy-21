@@ -71,6 +71,10 @@
 
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop) {
+    background-color: #eaeaea;
+  }
 }
 
 .stats__index--alone {
@@ -94,7 +98,7 @@
   background-color: transparent;
 
   @media (min-width: $tablet) {
-    max-width: 174px;
+    width: 174px;
 
     margin-top: 0;
     margin-left: auto;
@@ -102,5 +106,12 @@
     font-size: 20px;
     line-height: 30px;
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+
+    margin-top: 55px;
+    margin-left: 0;
   }
 }

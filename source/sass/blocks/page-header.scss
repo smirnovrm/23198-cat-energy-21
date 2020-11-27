@@ -6,6 +6,10 @@
   @media (min-width: $tablet) {
     padding-top: 24px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 53px;
+  }
 }
 
 .page-header__wrapper {
@@ -24,6 +28,10 @@
 
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
   }
 }
 

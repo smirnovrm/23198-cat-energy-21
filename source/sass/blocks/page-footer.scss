@@ -8,6 +8,11 @@
     padding-top: 52px;
     padding-bottom: 60px;
   }
+
+  @media (min-width: $desktop) {
+    padding-top: 57px;
+    padding-bottom: 58px;
+  }
 }
 
 .page-footer__wrapper {
@@ -25,6 +30,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
   }
 }
 

@@ -1,5 +1,6 @@
 .map-and-contact {
   font-size: 0;
+  position: relative;
 }
 
 .map-and-contact__contacts {
@@ -14,12 +15,17 @@
   @media (min-width: $tablet) {
     width: 709px;
 
-    margin: 0 auto;
-
     padding-left: 40px;
     padding-right: 42px;
     padding-top: 66px;
     padding-bottom: 51px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+
+    top: 95px;
+    left: 110px;
   }
 }
 

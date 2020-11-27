@@ -8,6 +8,11 @@
 
     row-gap: 37px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: none;
+  }
 }
 
 .work-list__item {
@@ -35,6 +40,24 @@
     line-height: 24px;
 
     background-repeat: no-repeat;
+  }
+}
+
+.work-list__item:nth-child(2) {
+  @media (min-width: $desktop) {
+    justify-self: center;
+  }
+}
+
+.work-list__item:nth-child(3) {
+  @media (min-width: $desktop) {
+    justify-self: end;
+  }
+}
+
+.work-list__item:nth-child(4) {
+  @media (min-width: $desktop) {
+    justify-self: end;
   }
 }
 
