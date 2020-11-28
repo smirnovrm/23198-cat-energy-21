@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    justify-content: flex-start;
+  }
 }
 
 .stats__box {
@@ -16,6 +20,17 @@
   border-radius: 3px;
 
   position: relative;
+
+  @media (min-width: $tablet) {
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+}
+
+.stats__box + .stats__box {
+  @media (min-width: $tablet) {
+    margin-left: 42px;
+  }
 }
 
 .stats__number {
@@ -26,6 +41,11 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats__index {
@@ -33,9 +53,10 @@
 
   width: 77px;
 
+  margin-top: 30px;
+
   text-align: center;
 
-  top: 45px;
   left: calc(50% - 38px);
 
   font-family: $basic-font-family;
@@ -44,6 +65,16 @@
 
   color: $special-dark-gray;
   background-color: #eaeaea;
+
+  @media (min-width: $tablet) {
+    margin-top: 45px;
+
+    background-color: $basic-white;
+  }
+
+  @media (min-width: $desktop) {
+    background-color: #eaeaea;
+  }
 }
 
 .stats__index--alone {
@@ -65,4 +96,22 @@
   color: $basic-dark;
 
   background-color: transparent;
+
+  @media (min-width: $tablet) {
+    width: 174px;
+
+    margin-top: 0;
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    width: auto;
+
+    margin-top: 55px;
+    margin-left: 0;
+  }
 }

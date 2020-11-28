@@ -1,5 +1,13 @@
 .how-it-work {
   margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    margin-top: 45px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 71px;
+  }
 }
 
 .how-it-work__wrapper {
@@ -7,6 +15,17 @@
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    width: 709px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+  }
 }
 
 
@@ -21,8 +40,17 @@
   line-height: 40px;
 
   text-align: left;
+
+  @media (min-width: $tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .how-it-work__list {
   margin-top: 38px;
+
+  @media (min-width: $tablet) {
+    margin-top: 32px;
+  }
 }
