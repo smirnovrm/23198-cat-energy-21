@@ -20,6 +20,31 @@
   padding-top: 27px;
 }
 
+.form__fieldset-group {
+  @media (min-width: $desktop) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 66px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.form__fieldset-group .form__wrapper {
+  @media (min-width: $desktop) {
+    width: 569px;
+    margin: 0;
+  }
+}
+
+.form__fieldset-group .form__fieldset:nth-child(2) {
+  @media (min-width: $desktop) {
+    justify-self: end;
+    background-color: $basic-white;
+  }
+}
+
 .form__wrapper {
   display: flex;
   flex-direction: column;
@@ -38,6 +63,13 @@
 
     padding-left: 41px;
     padding-right: 37px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
+
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -74,6 +106,10 @@
     padding-top: 71px;
     padding-left: 0;
   }
+
+  @media (min-width: $desktop) {
+    width: 1300px;
+  }
 }
 
 .form__legend::after {
@@ -109,6 +145,10 @@
     background-color: $basic-white;
 
     z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
   }
 }
 
@@ -157,9 +197,13 @@
 
 .form__fieldset:nth-child(2) .form__label {
   color: $special-dark-gray-2;
+
+  @media (min-width: $desktop) {
+    min-height: 40px;
+  }
 }
 
-.form__fieldset:nth-child(5) .form__label {
+.form__fieldset:nth-child(4) .form__label {
   color: $basic-dark;
 }
 
@@ -171,13 +215,13 @@
   }
 }
 
-.form__fieldset:nth-child(5) .form__label + .form__label {
+.form__fieldset:nth-child(4) .form__label + .form__label {
   @media (min-width: $tablet) {
     margin-top: 0;
   }
 }
 
-.form__fieldset:nth-child(5) .form__wrapper {
+.form__fieldset:nth-child(4) .form__wrapper {
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 221px 221px;
@@ -185,9 +229,16 @@
     column-gap: 123px;
     row-gap: 32px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 221px 221px 221px 221px;
+    grid-template-rows: auto;
+    column-gap: 104px;
+    row-gap: 0;
+  }
 }
 
-.form__fieldset:nth-child(5) + .form__wrapper {
+.form__fieldset:nth-child(4) + .form__wrapper {
   @media (min-width: $tablet) {
     margin-top: 54px;
     margin-bottom: 72px;
@@ -195,6 +246,30 @@
     display: grid;
     grid-template-columns: 282px auto;
     column-gap: 61px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 61px;
+    margin-bottom: 82px;
+
+    grid-template-columns: 568px auto;
+    column-gap: 81px;
+  }
+}
+
+.form__contact {
+  @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+  }
+}
+
+.form__contact .form__label {
+  @media (min-width: $desktop) {
+    width: 569px;
+    margin-top: 0;
   }
 }
 
