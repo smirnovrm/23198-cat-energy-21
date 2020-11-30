@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы - Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -33,38 +34,42 @@
         <p class="page-main__subheading">Заполните анкету, и мы подберем программу питания для вашего кота</p>
       </div>
       <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Информация о питомце</legend>
-          <div class="form__wrapper">
-            <label class="form__label" for="pet_name">Имя:<sup class="form__required">*</sup>
-              <input class="form__input-text" name="pet_name" id='pet_name' type="text" value="Барсик" required>
-            </label>
-            <label class="form__label" for="pet_weight">Вес (кг):<sup class="form__required">*</sup>
-              <input class="form__input-text" name="pet_weight" id='pet_weight' type="text" value="7" required>
-            </label>
-            <label class="form__label" for="pet_age">Возраст (лет):
-              <input class="form__input-text" name="pet_age" id='pet_age' type="text" value="7">
-            </label>
-          </div>
-        </fieldset>
-        <fieldset class="form__fieldset">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <div class="form__wrapper">
-            <label class="form__label" for='slim'>
-              <input class="form__input-radio form__input-radio--checked" type="radio" name='programm' id='slim'
-              value="slim" checked>Похудение
-            </label>
-            <label class="form__label" for='weight'>
-              <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight">Набор массы
-            </label>
-            <label class="form__label" for='no_programm'>
-              <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm">Не знаю (Нужен ваш совет)
-            </label>
-          </div>
-        </fieldset>
+        <div class="form__fieldset-group">
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Информация о питомце</legend>
+            <div class="form__wrapper">
+              <label class="form__label" for="pet_name">Имя:<sup class="form__required">*</sup>
+                <input class="form__input-text" name="pet_name" id='pet_name' type="text" value="Барсик" required>
+              </label>
+              <label class="form__label" for="pet_weight">Вес (кг):<sup class="form__required">*</sup>
+                <input class="form__input-text" name="pet_weight" id='pet_weight' type="text" value="7" required>
+              </label>
+              <label class="form__label" for="pet_age">Возраст (лет):
+                <input class="form__input-text" name="pet_age" id='pet_age' type="text" value="7">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <div class="form__wrapper">
+              <div class="form__inner-wrapper">
+                <label class="form__label" for='slim'>
+                  <input class="form__input-radio form__input-radio--checked" type="radio" name='programm' id='slim'
+                  value="slim" checked>Похудение
+                </label>
+                <label class="form__label" for='weight'>
+                  <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight">Набор массы
+                </label>
+                <label class="form__label" for='no_programm'>
+                  <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm">Не знаю (Нужен ваш совет)
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
         <fieldset class="form__fieldset form__fieldset--with-title">
           <legend class="form__legend"><span class="form__legend-text form__legend-text--contact">Контактные данные (владельца кота)</span></legend>
-          <div class="form__wrapper">
+          <div class="form__wrapper form__contact">
             <label class="form__label" for="email">E-mail:<sup class="form__required">*</sup>
               <input class="form__input-text form__input-text--icon-mail" name="email" id='email' type="email"
               value="kuklachev@gmail.com" required>
@@ -104,11 +109,11 @@
           <span class="form__note"><sup class="form__required form__required--note">*</sup> — Обязательные поля</span>
         </div>
       </form>
-      <section class="map-and-contact">
+      <section class="map-and-contact map-and-contact--inner">
         <h2 class="visually-hidden">Контакты и карта проезда</h2>
         <div class="map-and-contact__contacts contacts contacts--inner-page">
           <h3 class="contacts__heading">Приглашаем к сотрудничеству дилеров!</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
         <div class="map-and-contact__map map">
           <span class="visually-hidden">Карта проезда к нашему магазину</span>
