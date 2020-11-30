@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Подбор программы - Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -50,16 +51,18 @@
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Выбор программы</legend>
           <div class="form__wrapper">
-            <label class="form__label" for='slim'>
-              <input class="form__input-radio form__input-radio--checked" type="radio" name='programm' id='slim'
-              value="slim" checked>Похудение
-            </label>
-            <label class="form__label" for='weight'>
-              <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight">Набор массы
-            </label>
-            <label class="form__label" for='no_programm'>
-              <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm">Не знаю (Нужен ваш совет)
-            </label>
+            <div class="form__inner-wrapper">
+              <label class="form__label" for='slim'>
+                <input class="form__input-radio form__input-radio--checked" type="radio" name='programm' id='slim'
+                value="slim" checked>Похудение
+              </label>
+              <label class="form__label" for='weight'>
+                <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight">Набор массы
+              </label>
+              <label class="form__label" for='no_programm'>
+                <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm">Не знаю (Нужен ваш совет)
+              </label>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--with-title">
@@ -104,11 +107,11 @@
           <span class="form__note"><sup class="form__required form__required--note">*</sup> — Обязательные поля</span>
         </div>
       </form>
-      <section class="map-and-contact">
+      <section class="map-and-contact map-and-contact--inner">
         <h2 class="visually-hidden">Контакты и карта проезда</h2>
         <div class="map-and-contact__contacts contacts contacts--inner-page">
           <h3 class="contacts__heading">Приглашаем к сотрудничеству дилеров!</h3>
-          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
         <div class="map-and-contact__map map">
           <span class="visually-hidden">Карта проезда к нашему магазину</span>
