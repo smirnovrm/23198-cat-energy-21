@@ -35,7 +35,16 @@
     border-top: none;
 
     background-color: #f2f2f2;
+  }
 
+  @media (min-width: $desktop) {
+    width: 245px;
+
+    margin-bottom: 0;
+    margin-top: 144px;
+
+    padding-left: 35px;
+    padding-right: 30px;
   }
 }
 
@@ -80,6 +89,13 @@
     width: 161px;
     height: 172px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: -52px;
+
+    width: 161px;
+    height: 172px;
+  }
 }
 
 .catalog-list__image--bigsize {
@@ -91,6 +107,13 @@
 
     width: 168px;
     height: 200px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -80px;
+
+    width: 172px;
+    height: 196px;
   }
 }
 
@@ -107,6 +130,10 @@
 
     margin-top: 34px;
     margin-left: initial;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 46px;
   }
 }
 
@@ -187,6 +214,10 @@
 
   @media (min-width: $tablet) {
     max-width: 248px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 33px;
   }
 }
 

@@ -6,6 +6,10 @@
   @media (min-width: $tablet) {
     margin-top: 164px;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 16px;
+  }
 }
 
 .catalog__wrapper {
@@ -20,6 +24,10 @@
 
     padding-left: 0;
     padding-right: 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1220px;
   }
 }
 

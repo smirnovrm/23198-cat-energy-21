@@ -11,6 +11,10 @@
     font-size: 16px;
     border-collapse: collapse;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 21.58px;
+  }
 }
 
 .goods-info__row .goods-info__cell {
@@ -22,6 +26,7 @@
 
 .goods-info__cell {
   text-align: right;
+
   @media (min-width: $tablet) {
     border-bottom: 1px solid $special-gray;
   }

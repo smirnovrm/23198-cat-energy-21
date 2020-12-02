@@ -23,6 +23,15 @@
     background-image: url("../img/gift-photo-tablet.png");
     background-size: cover;
   }
+
+  @media (min-width: $desktop) {
+    flex-direction: column;
+
+    padding-top: 55.93px;
+    padding-bottom: 45.16px;
+
+    background-image: url("../img/gift-photo-desktop.png");
+  }
 }
 
 .gift-box__speech {
@@ -48,6 +57,13 @@
 
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    margin-top: 46.41px;
+    margin-right: auto;
+
+    text-align: center;
+  }
 }
 
 .gift-box__image {
@@ -56,5 +72,9 @@
     height: 82.57px;
 
     margin-left: 78px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
   }
 }
