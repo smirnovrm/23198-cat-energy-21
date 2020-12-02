@@ -2,6 +2,10 @@
   margin-top: 41px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet) {
+    margin-top: 164px;
+  }
 }
 
 .catalog__wrapper {
@@ -10,6 +14,13 @@
 
   padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    width: 709px;
+
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .catalog__list {

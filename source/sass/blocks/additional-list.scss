@@ -5,6 +5,15 @@
   padding-right: 20px;
 
   background-color: $basic-white;
+
+  @media (min-width: $tablet) {
+    margin-top: 80px;
+
+    padding-left: 0;
+    padding-right: 0;
+
+    border: 1px solid $special-gray;
+  }
 }
 
 .additional-list__item {
@@ -12,10 +21,31 @@
 
   padding-top: 13px;
   padding-bottom: 19px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding-top: 26px;
+    padding-bottom: 28px;
+    padding-left: 37px;
+    padding-right: 37px;
+  }
 }
 
 .additional-list__item:last-child {
   border-bottom: 1px solid $special-gray;
+
+  @media (min-width: $tablet) {
+    border-bottom: none;
+  }
+}
+
+.additional-list__item:first-child {
+  @media (min-width: $tablet) {
+    border-top: none;
+  }
 }
 
 .additional-list__title {
@@ -30,6 +60,13 @@
   text-transform: uppercase;
 
   color: $special-dark-gray-2;
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-list__wrapper {
@@ -37,6 +74,12 @@
   justify-content: space-between;
 
   margin-top: 13px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+
+    margin-top: 0;
+  }
 }
 
 .additional-list__boxing {
@@ -48,6 +91,13 @@
   line-height: 14px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    margin-right: 51px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-list__price {
@@ -58,6 +108,11 @@
   line-height: 14px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional-list__button {
@@ -66,4 +121,8 @@
   margin-top: 12px;
 
   background-color: $basic-green;
+
+  @media (min-width: $tablet) {
+    margin-top: 26px;
+  }
 }

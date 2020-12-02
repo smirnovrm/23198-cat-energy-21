@@ -12,8 +12,18 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
-}
 
+  @media (min-width: $tablet) {
+    flex-direction: row;
+
+    padding: 0;
+    padding-top: 63.85px;
+    padding-bottom: 73.69px;
+
+    background-image: url("../img/gift-photo-tablet.png");
+    background-size: cover;
+  }
+}
 
 .gift-box__speech {
   margin: 0;
@@ -30,4 +40,21 @@
   text-align: center;
 
   color: $basic-white;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 124px;
+
+    text-align: left;
+  }
+}
+
+.gift-box__image {
+  @media (min-width: $tablet) {
+    width: 80px;
+    height: 82.57px;
+
+    margin-left: 78px;
+  }
 }
