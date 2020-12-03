@@ -1,6 +1,8 @@
 .form {
   font-family: $special-font-family;
   text-transform: uppercase;
+
+  overflow: hidden;
 }
 
 .form__fieldset {

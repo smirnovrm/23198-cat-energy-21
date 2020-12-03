@@ -1,7 +1,5 @@
 .page-main {
   background-color: $basic-white;
-
-  overflow: hidden;
 }
 
 .page-main__wrapper {
@@ -57,6 +55,19 @@
     margin-left: 0;
   }
 }
+
+.page-main__heading--catalog {
+  @media (min-width: $tablet) {
+    margin-top: 65px;
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 79px;
+    margin-left: 17px;
+  }
+}
+
 
 .page-main__subheading {
   width: 226px;

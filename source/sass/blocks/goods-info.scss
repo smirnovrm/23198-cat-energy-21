@@ -6,14 +6,30 @@
   line-height: 16px;
 
   color: $special-dark-gray;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    border-collapse: collapse;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 21.58px;
+  }
 }
 
-.goods-info__body {
-  border-collapse: collapse;
+.goods-info__row .goods-info__cell {
+  @media (min-width: $tablet) {
+    padding-top: 7px;
+    padding-bottom: 9px;
+  }
 }
 
 .goods-info__cell {
   text-align: right;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $special-gray;
+  }
 }
 
 .goods-info__cell:nth-child(1) {

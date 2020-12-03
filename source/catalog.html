@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог - Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -29,7 +30,7 @@
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
-        <h1 class="page-main__heading">Каталог продукции</h1>
+        <h1 class="page-main__heading page-main__heading--catalog">Каталог продукции</h1>
       </div>
       <section class="catalog">
         <h2 class="visually-hidden">Каталог</h2>
@@ -205,48 +206,50 @@
         </div>
       </section>
       <section class="additional-goods">
-        <h2 class="additional-goods__heading"><span class="additional-goods__heading-text">Дополнительные товары</span></h2>
-        <ul class="additional-goods__list additional-list">
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">Сахарозаменитель</h3>
-            <div class="additional-list__wrapper">
-              <span class="additional-list__boxing">1 упаковка (100 г)</span>
-              <span class="additional-list__price">200 Р.</span>
-            </div>
-            <button class="additional-list__button button">Заказать</button>
-          </li>
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">Питьевая вода</h3>
-            <div class="additional-list__wrapper">
-              <span class="additional-list__boxing">5 литров</span>
-              <span class="additional-list__price">50 Р.</span>
-            </div>
-            <button class="additional-list__button button">Заказать</button>
-          </li>
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">Молоко</h3>
-            <div class="additional-list__wrapper">
-              <span class="additional-list__boxing">1 литр</span>
-              <span class="additional-list__price">100 Р.</span>
-            </div>
-            <button class="additional-list__button button">Заказать</button>
-          </li>
-          <li class="additional-list__item">
-            <h3 class="additional-list__title">Витамины</h3>
-            <div class="additional-list__wrapper">
-              <span class="additional-list__boxing">1 упаковка (30 г)</span>
-              <span class="additional-list__price">300 Р.</span>
-            </div>
-            <button class="additional-list__button button">Заказать</button>
-          </li>
-        </ul>
-        <section class="additional-goods__gift gift-box">
-          <h2 class="visually-hidden">Подарок при заказе</h2>
-          <img class="gift-box__image" src="img/icon_gift.svg" width="78" height="80" alt="">
-          <p class="gift-box__speech">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
-        </section>
+        <h2 class="additional-goods__heading"><span class="additional-goods__heading-text"><span>Дополнительные товары</span></span></h2>
+        <div class="additional-goods__inner">
+          <ul class="additional-goods__list additional-list">
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">Сахарозаменитель</h3>
+              <div class="additional-list__wrapper">
+                <span class="additional-list__boxing">1 упаковка (100 г)</span>
+                <span class="additional-list__price">200 Р.</span>
+              </div>
+              <button class="additional-list__button button">Заказать</button>
+            </li>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">Питьевая вода</h3>
+              <div class="additional-list__wrapper">
+                <span class="additional-list__boxing">5 литров</span>
+                <span class="additional-list__price">50 Р.</span>
+              </div>
+              <button class="additional-list__button button">Заказать</button>
+            </li>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">Молоко</h3>
+              <div class="additional-list__wrapper">
+                <span class="additional-list__boxing">1 литр</span>
+                <span class="additional-list__price">100 Р.</span>
+              </div>
+              <button class="additional-list__button button">Заказать</button>
+            </li>
+            <li class="additional-list__item">
+              <h3 class="additional-list__title">Витамины</h3>
+              <div class="additional-list__wrapper">
+                <span class="additional-list__boxing">1 упаковка (30 г)</span>
+                <span class="additional-list__price">300 Р.</span>
+              </div>
+              <button class="additional-list__button button">Заказать</button>
+            </li>
+          </ul>
+          <section class="additional-goods__gift gift-box">
+            <h2 class="visually-hidden">Подарок при заказе</h2>
+            <img class="gift-box__image" src="img/icon_gift.svg" width="78" height="80" alt="">
+            <p class="gift-box__speech">Закажите все<br> и получите чехол для<br> кота в подарок!</p>
+          </section>
+        </div>
       </section>
-      <section class="map-and-contact">
+      <section class="map-and-contact map-and-contact--inner">
         <h2 class="visually-hidden">Контакты и карта проезда</h2>
         <div class="map-and-contact__contacts contacts contacts--inner-page">
           <h3 class="contacts__heading">Приглашаем к сотрудничеству дилеров!</h3>
