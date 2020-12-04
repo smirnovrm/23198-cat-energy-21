@@ -39,6 +39,8 @@
   width: 30px;
   height: 30px;
 
+  margin-right: -3px;
+
   align-self: center;
 
   background-image: url("../img/icon_menu-close.svg");
@@ -55,4 +57,9 @@
 
 .page-header__navigation {
   width: auto;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
 }

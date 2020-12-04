@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position:  50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url( "img/design/index/Mobile.jpg" );
+      }
+      /* Планшет */
+      @media ( min-width: 768px ) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url( "img/design/index/Tablet.jpg" );
+        }
+      }
+      /* Десктоп */
+      @media ( min-width: 1330px ) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url( "img/design/index/Desktop.jpg" );
+        }
+      }
+    </style>
+    <link href="pixel-glass/styles.css" rel="stylesheet">
+    <script src="pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
 
   <body class="page__body">
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="page-header__logo logo" href="/">
-          <img class="logo__images logo__images--picture" src="https://via.placeholder.com/190x38" alt="">
+          <img class="logo__images logo__images--picture" src="img/logo.svg" width="190" height="38" alt="">
         </a>
         <button class="page-header__toogle button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="page-header__navigation main-menu">
