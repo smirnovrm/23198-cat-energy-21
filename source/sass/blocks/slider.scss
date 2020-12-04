@@ -26,12 +26,21 @@
   }
 }
 
+.slider__item:nth-child(2) {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .slider__switchers {
   margin: 0;
-  margin-top: 27px;
+  margin-top: 28px;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   font-family: $special-font-family;
   font-size: 16px;
@@ -41,8 +50,14 @@
 }
 
 .slider__switcher {
-  margin-left: 12px;
-  margin-right: 12px;
+  width: 84px;
+  height: 14px;
+  border: 1px solid $special-gray;
+  border-radius: 0.5em;
+
+
+  margin-left: 19px;
+  margin-right: 16px;
 
   @media (min-width: $tablet) {
     margin-left: 24px;

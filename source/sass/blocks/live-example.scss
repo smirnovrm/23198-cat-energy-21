@@ -1,6 +1,6 @@
 .live-example {
   margin-top: 42px;
-  padding-bottom: 30px;
+  padding-bottom: 36px;
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
@@ -55,6 +55,11 @@
 
     padding-top: 0;
   }
+}
+
+.live-example__wrapper--slider {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .live-example__heading {
@@ -119,7 +124,7 @@
 }
 
 .live-example__slider {
-  margin-top: 42px;
+  margin-top: 15px;
 
   @media (min-width: $tablet) {
     margin-top: 250px;
