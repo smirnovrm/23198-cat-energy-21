@@ -48,7 +48,7 @@
     padding-left: 53px;
     padding-right: 0;
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop) {
@@ -63,6 +63,10 @@
 
 .programm-select__box + .programm-select__box {
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 30px;
+  }
 
   @media (min-width: $desktop) {
     margin-top: 0;
@@ -150,7 +154,8 @@
   background-image: url("../img/icon_cat-weight.svg");
 
   @media (min-width: $tablet) {
-    margin-right: 28px;
+    margin-top: 15px;
+    margin-right: 31px;
 
     width: 268px;
     height: 200px;
@@ -179,7 +184,7 @@
 
   @media (min-width: $tablet) {
     width: 377px;
-    margin-top: 32px;
+    margin-top: 25px;
 
     font-size: 16px;
     line-height: 24px;
@@ -243,7 +248,7 @@
   @media (min-width: $tablet) {
     max-width: initial;
     align-self: flex-start;
-    margin-top: 48px;
+    margin-top: 52px;
 
     font-size: 20px;
     line-height: 30px;

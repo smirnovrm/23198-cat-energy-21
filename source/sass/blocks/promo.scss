@@ -7,6 +7,8 @@
   background-position: top center;
 
   @media (min-width: $tablet) {
+    padding-top: 52px;
+
     background-image: none;
   }
 
@@ -144,7 +146,7 @@
     width: 244px;
 
     margin-top: 49px;
-    margin-left: 88px;
+    margin-left: 82px;
 
     padding-left: 26px;
     padding-right: 26px;

@@ -14,12 +14,18 @@
   color: $special-dark-gray;
 
   @media (min-width: $tablet) {
-    margin-right: 22px;
+    margin-right: 24px;
+    margin-top: -4px;
   }
 }
 
 .copyright__link {
   margin-top: 3px;
+
+  @media (min-width: $tablet) {
+    margin-top: 2px;
+    margin-right: 2px;
+  }
 }
 
 .copyright__logo {

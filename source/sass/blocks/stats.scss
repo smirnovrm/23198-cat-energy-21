@@ -22,8 +22,10 @@
   position: relative;
 
   @media (min-width: $tablet) {
+    width: 162px;
+
     padding-top: 15px;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 }
 
@@ -67,7 +69,15 @@
   background-color: #eaeaea;
 
   @media (min-width: $tablet) {
-    margin-top: 45px;
+    width: 114px;
+
+    margin-top: 48px;
+    margin-left: -15px;
+
+    // text-align: left;
+
+    font-size: 14px;
+    line-height: 14px;
 
     background-color: $basic-white;
   }
@@ -100,7 +110,8 @@
   @media (min-width: $tablet) {
     width: 174px;
 
-    margin-top: 0;
+    margin-top: 6px;
+    margin-right: 2px;
     margin-left: auto;
 
     font-size: 20px;
@@ -113,5 +124,13 @@
 
     margin-top: 55px;
     margin-left: 0;
+  }
+}
+
+.stats__box--with-border:nth-child(2) .stats__index {
+  @media (min-width: $tablet) {
+    width: 142px;
+
+    margin-left: -29px;
   }
 }
