@@ -57,7 +57,7 @@
     padding-left: 52px;
     padding-right: 51px;
     padding-top: 41px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 }
 
@@ -140,6 +140,14 @@
   @media (min-width: $desktop) {
     width: 100px;
     height: 106px;
+
+    margin-left: 0;
+  }
+}
+
+.programm-select__heading--pro {
+  @media (min-width: $desktop) {
+    margin-top: -8px;
   }
 }
 
@@ -162,8 +170,9 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: -21px;
-    margin-right: 62px;
+    margin-top: 8px;
+    margin-left: -19px;
+    margin-right: 47px;
 
     width: 134px;
     height: 100px;
@@ -255,7 +264,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 
@@ -273,6 +282,10 @@
 
   @media (min-width: $tablet) {
     margin-left: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 28px;
   }
 }
 

@@ -47,11 +47,24 @@
       margin-left: 36px;
     }
   }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 30px;
+
+    &:not(:first-child) {
+      margin-left: 35px;
+    }
+  }
 }
 
 .menu-list__item a {
   color: $basic-dark;
   text-decoration: none;
+
+  @media (min-width: $desktop) {
+    color: $basic-white;
+  }
 }
 
 .menu-list__item--active a {
@@ -59,5 +72,9 @@
     padding-bottom: 7px;
 
     border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $desktop) {
+    border-bottom-color: $basic-white;
   }
 }

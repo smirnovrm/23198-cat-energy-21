@@ -59,6 +59,10 @@
 
     text-align: right;
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .contacts__address span {

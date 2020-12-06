@@ -21,12 +21,15 @@
 
     padding-left: 40px;
     padding-right: 42px;
-    padding-top: 66px;
-    padding-bottom: 58px;
+    padding-top: 65px;
+    padding-bottom: 59px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
+
+    padding-left: 76px;
+    padding-right: 84px;
 
     top: 95px;
     left: 110px;

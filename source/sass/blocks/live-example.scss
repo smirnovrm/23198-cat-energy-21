@@ -60,6 +60,12 @@
 .live-example__wrapper--slider {
   padding-left: 0;
   padding-right: 0;
+
+  @media (min-width: $desktop) {
+    width: 100%;
+
+    margin: 0;
+  }
 }
 
 .live-example__heading {
@@ -79,7 +85,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: -125px;
+    margin-top: -136px;
   }
 }
 
@@ -107,7 +113,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 133px;
+    margin-top: 147px;
 
     max-width: 436px;
   }
@@ -121,6 +127,8 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: 68px;
+
     max-width: 366px;
   }
 }

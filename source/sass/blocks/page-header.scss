@@ -35,6 +35,12 @@
   }
 }
 
+.page-header__logo {
+  @media (min-width: $desktop) {
+    z-index: 1;
+  }
+}
+
 .page-header__toogle {
   width: 30px;
   height: 30px;
@@ -61,5 +67,9 @@
 
   @media (min-width: $tablet) {
     margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -2px;
   }
 }

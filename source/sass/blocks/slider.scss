@@ -52,6 +52,11 @@
   @media (min-width: $tablet) {
     margin-top: 16px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 43px;
+    margin-top: 15px;
+  }
 }
 
 .slider__switcher {
