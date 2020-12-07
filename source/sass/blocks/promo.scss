@@ -17,7 +17,8 @@
 
     padding-top: 0;
 
-    background-image: url("../img/promo_background_desktop.png");
+    background-image: url("../img/promo_background_desktop.png"),
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgb(99, 167, 60) 50%);
     background-position: top right;
   }
 }
