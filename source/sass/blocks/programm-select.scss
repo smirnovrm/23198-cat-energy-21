@@ -37,9 +37,9 @@
   display: flex;
   flex-direction: column;
 
-  padding-top: 30px;
+  padding-top: 21px;
   padding-right: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 21px;
   padding-left: 20px;
 
   background-color: $basic-gray;
@@ -48,7 +48,7 @@
     padding-left: 53px;
     padding-right: 0;
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop) {
@@ -57,12 +57,16 @@
     padding-left: 52px;
     padding-right: 51px;
     padding-top: 41px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 }
 
 .programm-select__box + .programm-select__box {
   margin-top: 20px;
+
+  @media (min-width: $tablet) {
+    margin-top: 30px;
+  }
 
   @media (min-width: $desktop) {
     margin-top: 0;
@@ -118,6 +122,7 @@
 }
 
 .programm-select__heading--slim::before {
+  margin-left: 2px;
   margin-right: 19px;
 
   width: 50px;
@@ -135,10 +140,20 @@
   @media (min-width: $desktop) {
     width: 100px;
     height: 106px;
+
+    margin-left: 0;
+  }
+}
+
+.programm-select__heading--pro {
+  @media (min-width: $desktop) {
+    margin-top: -8px;
   }
 }
 
 .programm-select__heading--pro::before {
+  margin-top: 3px;
+  margin-left: -7px;
   margin-right: 11px;
 
   width: 67px;
@@ -147,15 +162,17 @@
   background-image: url("../img/icon_cat-weight.svg");
 
   @media (min-width: $tablet) {
-    margin-right: 28px;
+    margin-top: 15px;
+    margin-right: 31px;
 
     width: 268px;
     height: 200px;
   }
 
   @media (min-width: $desktop) {
-    margin-left: -21px;
-    margin-right: 62px;
+    margin-top: 8px;
+    margin-left: -19px;
+    margin-right: 47px;
 
     width: 134px;
     height: 100px;
@@ -164,7 +181,7 @@
 
 .programm-select__excerpt {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 22px;
 
   font-family: $basic-font-family;
   font-style: normal;
@@ -176,7 +193,7 @@
 
   @media (min-width: $tablet) {
     width: 377px;
-    margin-top: 32px;
+    margin-top: 25px;
 
     font-size: 16px;
     line-height: 24px;
@@ -206,7 +223,7 @@
   width: 100%;
   height: 1px;
 
-  margin-top: 23px;
+  margin-top: 22px;
 
   background-color: #d9d9d9;
 
@@ -223,7 +240,7 @@
   justify-content: space-between;
   align-items: center;
 
-  margin-top: 15px;
+  margin-top: 20px;
 
   font-family: $special-font-family;
   font-style: normal;
@@ -240,20 +257,23 @@
   @media (min-width: $tablet) {
     max-width: initial;
     align-self: flex-start;
-    margin-top: 48px;
+    margin-top: 52px;
 
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 31px;
+    margin-top: 28px;
   }
 }
 
 .programm-select__link::after {
   content: "";
   display: block;
+
+  margin-right: 1px;
+  margin-bottom: 3px;
 
   width: 32px;
   height: 11px;
@@ -263,4 +283,12 @@
   @media (min-width: $tablet) {
     margin-left: 25px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 28px;
+  }
+}
+
+.programm-select__heading--pro ~ .programm-select__link::after {
+  margin-right: 3px;
 }

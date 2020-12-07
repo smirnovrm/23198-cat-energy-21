@@ -7,15 +7,18 @@
   background-position: top center;
 
   @media (min-width: $tablet) {
+    padding-top: 52px;
+
     background-image: none;
   }
 
   @media (min-width: $desktop) {
-    margin-top: -123px;
+    margin-top: -121px;
 
     padding-top: 0;
 
-    background-image: url("../img/promo_background_desktop.png");
+    background-image: url("../img/promo_background_desktop.png"),
+      linear-gradient(90deg, rgba(255, 255, 255, 0) 50%, rgb(99, 167, 60) 50%);
     background-position: top right;
   }
 }
@@ -107,10 +110,14 @@
 
     color: $basic-dark;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 80px;
+  }
 }
 
 .promo__picture {
-  margin-top: 30px;
+  margin-top: 29px;
 
   @media (min-width: $tablet) {
     width: 709px;
@@ -128,12 +135,14 @@
 
     position: absolute;
 
-    right: 220px;
-    top: 140px;
+    right: 194px;
+    top: 149px;
   }
 }
 
 .promo__choose-programm {
+  margin-top: 3px;
+
   font-size: 14px;
 
   background-color: $basic-green;
@@ -142,7 +151,7 @@
     width: 244px;
 
     margin-top: 49px;
-    margin-left: 88px;
+    margin-left: 82px;
 
     padding-left: 26px;
     padding-right: 26px;
@@ -156,5 +165,10 @@
     word-break: break-all;
 
     z-index: 1;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 51px;
+    margin-left: 80px;
   }
 }

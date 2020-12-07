@@ -6,12 +6,12 @@
 
   @media (min-width: $tablet) {
     padding-top: 52px;
-    padding-bottom: 60px;
+    padding-bottom: 56px;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 57px;
-    padding-bottom: 58px;
+    padding-top: 56px;
+    padding-bottom: 51px;
   }
 }
 
@@ -37,9 +37,19 @@
   }
 }
 
+.page-footer__logo {
+  @media (min-width: $tablet) {
+    margin-top: -1px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -2px;
+  }
+}
+
 .page-footer__social {
-  margin-top: 32px;
-  margin-bottom: 22px;
+  margin-top: 31px;
+  margin-bottom: 19px;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;

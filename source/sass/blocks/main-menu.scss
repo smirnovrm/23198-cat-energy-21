@@ -1,9 +1,13 @@
 .main-menu {
+  display: none;
+
   background-color: $basic-white;
 
   width: 100%;
 
   @media (min-width: $tablet) {
+    display: flex;
+
     width: auto;
   }
 

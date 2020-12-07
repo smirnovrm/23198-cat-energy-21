@@ -46,18 +46,24 @@
 .work-list__item:nth-child(2) {
   @media (min-width: $desktop) {
     justify-self: center;
+
+    margin-right: 39px;
   }
 }
 
 .work-list__item:nth-child(3) {
   @media (min-width: $desktop) {
     justify-self: end;
+
+    margin-right: 18px;
   }
 }
 
 .work-list__item:nth-child(4) {
   @media (min-width: $desktop) {
     justify-self: end;
+
+    margin-right: -4px;
   }
 }
 
@@ -90,6 +96,14 @@
   }
 }
 
+.work-list__item br {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
 .work-list__item--nutrients {
   @media (min-width: $tablet) {
     width: 230px;
@@ -105,10 +119,13 @@
   @media (min-width: $tablet) {
     width: 246px;
 
+    margin-left: auto;
+    margin-right: 79px;
+
     padding-right: 19px;
 
     background-image: url("../img/two.svg");
-    background-position: right 16px bottom 13px;
+    background-position: right 11px bottom 13px;
   }
 }
 
@@ -126,6 +143,9 @@
 .work-list__item--month {
   @media (min-width: $tablet) {
     width: 249px;
+
+    margin-left: auto;
+    margin-right: 76px;
 
     padding-right: 4px;
 

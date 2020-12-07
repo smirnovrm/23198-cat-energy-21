@@ -35,13 +35,23 @@
   }
 }
 
+.page-header__logo {
+  @media (min-width: $desktop) {
+    z-index: 1;
+  }
+}
+
 .page-header__toogle {
   width: 30px;
   height: 30px;
 
+  margin-right: -3px;
+  margin-bottom: 19px;
+  margin-top: 4px;
+
   align-self: center;
 
-  background-image: url("../img/icon_menu-close.svg");
+  background-image: url("../img/icon_menu-open.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: $basic-white;
@@ -55,4 +65,12 @@
 
 .page-header__navigation {
   width: auto;
+
+  @media (min-width: $tablet) {
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -2px;
+  }
 }
