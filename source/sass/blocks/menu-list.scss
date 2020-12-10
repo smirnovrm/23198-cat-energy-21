@@ -78,3 +78,17 @@
     border-bottom-color: $basic-white;
   }
 }
+
+.menu-list__item--inner a {
+  @media (min-width: $desktop) {
+    color: $basic-dark;
+  }
+}
+
+.menu-list__item--inner-active a {
+  @media (min-width: $tablet) {
+    padding-bottom: 7px;
+
+    border-bottom: 2px solid $basic-green;
+  }
+}
