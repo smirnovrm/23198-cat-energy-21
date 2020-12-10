@@ -18,6 +18,11 @@
   padding-bottom: 20px;
 
   background-color: $basic-gray;
+
+  @media (min-width: $tablet) {
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
 }
 
 .contacts__heading {
