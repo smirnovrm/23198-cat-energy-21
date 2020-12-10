@@ -347,27 +347,6 @@
   }
 }
 
-// .form__contact .form__legend::after {
-//   @media (min-width: $tablet) {
-//     margin-top: 10px;
-//   }
-// }
-
-// .form__contact .form__wrapper {
-//   margin-top: 4px;
-
-//   @media (min-width: $tablet) {
-//     margin-top: 46px;
-//   }
-
-//   @media (min-width: $desktop) {
-//     display: flex;
-//     flex-direction: row;
-
-//     justify-content: space-between;
-//   }
-// }
-
 .form__contact .form__label {
   @media (min-width: $desktop) {
     width: 569px;
