@@ -431,6 +431,18 @@
   margin-top: 12px;
 }
 
+.form__label:nth-child(3) .form__input-text {
+  margin-left: 14px;
+
+  width: 172px;
+
+  flex-grow: 0;
+
+  @media (min-width: $tablet) {
+    flex-grow: 1;
+  }
+}
+
 .form__required {
   font-size: 16px;
   line-height: 18px;
@@ -497,7 +509,7 @@
   margin-top: 5px;
   margin-left: 9px;
 
-  padding-right: 40px;
+  padding-right: 31px;
 
   background-image: url("../img/icon_phone.svg");
   background-repeat: no-repeat;
