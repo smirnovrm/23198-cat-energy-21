@@ -17,8 +17,8 @@
     flex-direction: row;
 
     padding: 0;
-    padding-top: 63.85px;
-    padding-bottom: 73.69px;
+    padding-top: 56.75px;
+    padding-bottom: 60.69px;
 
     background-image: url("../img/gift-photo-tablet.png");
     background-size: cover;
@@ -52,9 +52,9 @@
   color: $basic-white;
 
   @media (min-width: $tablet) {
-    margin-top: 0;
+    margin-top: 8px;
     margin-left: auto;
-    margin-right: 124px;
+    margin-right: 125px;
 
     text-align: left;
   }

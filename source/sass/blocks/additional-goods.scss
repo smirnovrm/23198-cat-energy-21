@@ -2,13 +2,13 @@
   padding-top: 26px;
 
   @media (min-width: $tablet) {
-    padding-top: 68px;
+    padding-top: 75px;
 
     overflow: hidden;
   }
 
   @media (min-width: $desktop) {
-    padding-top: 75px;
+    // padding-top: 75px;
     padding-bottom: 86px;
   }
 }
@@ -66,6 +66,9 @@
   @media (min-width: $tablet) {
     width: 709px;
     margin: 0 auto;
+    margin-top: -2px;
+
+    font-size: 36px;
 
     z-index: 1;
   }
@@ -121,9 +124,9 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet) {
-    width: 709px;
+    width: 708px;
 
-    margin-top: 69px;
+    margin-top: 68px;
     margin-bottom: 76px;
   }
 

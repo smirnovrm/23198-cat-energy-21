@@ -11,7 +11,10 @@
   color: $special-dark-gray;
 
   @media (min-width: $tablet) {
+    margin-top: 16px;
+
     font-size: 16px;
+    line-height: 14px;
     border-collapse: collapse;
   }
 
@@ -23,7 +26,14 @@
 .goods-info__row .goods-info__cell {
   @media (min-width: $tablet) {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
+  }
+}
+
+.goods-info__row:not(:first-child) .goods-info__cell {
+  @media (min-width: $tablet) {
+    padding-top: 9px;
+    padding-bottom: 8px;
   }
 }
 

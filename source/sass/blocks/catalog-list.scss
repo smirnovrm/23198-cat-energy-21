@@ -59,7 +59,11 @@
   background-position: center top 25px;
 
   @media (min-width: $tablet) {
+    margin-top: 1px;
+    margin-right: 1px;
     margin-bottom: 0;
+
+    padding-bottom: 37px;
 
     background-color: $basic-white;
     background-size: 60px;
@@ -76,11 +80,15 @@
 }
 
 .catalog-list__item:nth-child(2n) .catalog-list__button {
-  margin-top: 9px;
+  @media (max-width: 767px) {
+    margin-top: 9px;
+  }
 }
 
 .catalog-list__item:last-child .catalog-list__button {
-  margin-top: 20px;
+  @media (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
 
 .catalog-list__image {
@@ -182,7 +190,7 @@
   @media (min-width: $tablet) {
     width: 134px;
 
-    margin-top: 82px;
+    margin-top: 79px;
   }
 }
 
@@ -224,6 +232,9 @@
 
   @media (min-width: $tablet) {
     max-width: 248px;
+
+    margin-top: 34px;
+    margin-left: 3px;
   }
 
   @media (min-width: $desktop) {
@@ -238,6 +249,7 @@
   background-color: $basic-gray;
 
   @media (min-width: $tablet) {
+    margin-left: 0;
     margin-top: auto;
   }
 }
