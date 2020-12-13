@@ -56,7 +56,7 @@
 
   background-image: url("../img/plus.svg");
   background-repeat: no-repeat;
-  background-position: center top 26px;
+  background-position: center top 25px;
 
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -73,6 +73,14 @@
   @media (min-width: $tablet) {
     margin-bottom: 0;
   }
+}
+
+.catalog-list__item:nth-child(2n) .catalog-list__button {
+  margin-top: 9px;
+}
+
+.catalog-list__item:last-child .catalog-list__button {
+  margin-top: 20px;
 }
 
 .catalog-list__image {
@@ -118,11 +126,13 @@
 }
 
 .catalog-list__info {
-  width: 142px;
+  width: 145px;
 
   display: flex;
   flex-direction: column;
 
+  margin-top: -3px;
+  margin-right: -4px;
   margin-left: auto;
 
   @media (min-width: $tablet) {
@@ -222,7 +232,6 @@
 }
 
 .catalog-list__button--more {
-  margin-top: 21px;
 
   color: $special-dark-gray;
 
