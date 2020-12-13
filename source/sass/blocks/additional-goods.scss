@@ -8,8 +8,7 @@
   }
 
   @media (min-width: $desktop) {
-    // padding-top: 75px;
-    padding-bottom: 86px;
+    padding-bottom: 85px;
   }
 }
 
@@ -50,6 +49,10 @@
     right: 9999px;
     width: 99999px;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: -12px;
+  }
 }
 
 .additional-goods__heading-text {
@@ -74,7 +77,9 @@
   }
 
   @media (min-width: $desktop) {
-    width: 1220px;
+    width: 1300px;
+
+    margin-top: 6px;
   }
 }
 
@@ -85,13 +90,18 @@
 
     background-color: $basic-white;
   }
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
+    padding-right: 35px;
+  }
 }
 
 .additional-goods__inner {
   @media (min-width: $desktop) {
     width: 1220px;
     margin: 0 auto;
-    margin-top: 81px;
+    margin-top: 86px;
 
     display: grid;
     grid-template-columns: 896px 245px;

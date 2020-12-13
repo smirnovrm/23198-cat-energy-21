@@ -21,6 +21,7 @@
     border-bottom: 1px solid $special-gray;
 
     margin-top: 0;
+    margin-bottom: 1px;
   }
 }
 
@@ -44,8 +45,8 @@
   @media (min-width: $desktop) {
     align-items: center;
 
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 18px;
+    padding-bottom: 16px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -68,6 +69,12 @@
 .additional-list__item:nth-child(2) .additional-list__boxing {
   @media (min-width: $tablet) {
     margin-right: 60px;
+  }
+}
+
+.additional-list__item:nth-child(2) .additional-list__price {
+  @media (min-width: $desktop) {
+    margin-right: 8px;
   }
 }
 
@@ -160,6 +167,8 @@
 
   @media (min-width: $desktop) {
     width: 244px;
-    margin-top: 0;
+
+    margin-top: -3px;
+    margin-right: 1px;
   }
 }

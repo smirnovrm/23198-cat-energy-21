@@ -28,7 +28,7 @@
     flex-direction: column;
 
     padding-top: 55.93px;
-    padding-bottom: 45.16px;
+    padding-bottom: 42.16px;
 
     background-image: url("../img/gift-photo-desktop.png");
   }
@@ -60,7 +60,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: 46.41px;
+    margin-top: 49.41px;
     margin-right: auto;
 
     text-align: center;
@@ -76,6 +76,6 @@
   }
 
   @media (min-width: $desktop) {
-    margin-left: 0;
+    margin-left: 2px;
   }
 }
