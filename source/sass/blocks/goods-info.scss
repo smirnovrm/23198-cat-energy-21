@@ -1,26 +1,41 @@
 .goods-info {
+  margin-top: 11px;
+  margin-right: 2px;
+
   font-family: $basic-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 12px;
 
   color: $special-dark-gray;
 
   @media (min-width: $tablet) {
+    margin-top: 16px;
+
     font-size: 16px;
+    line-height: 14px;
     border-collapse: collapse;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 21.58px;
+    width: 169px;
+
+    margin-top: 17.58px;
   }
 }
 
 .goods-info__row .goods-info__cell {
   @media (min-width: $tablet) {
     padding-top: 7px;
-    padding-bottom: 9px;
+    padding-bottom: 7px;
+  }
+}
+
+.goods-info__row:not(:first-child) .goods-info__cell {
+  @media (min-width: $tablet) {
+    padding-top: 9px;
+    padding-bottom: 8px;
   }
 }
 
