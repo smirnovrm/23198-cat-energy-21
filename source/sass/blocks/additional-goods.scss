@@ -2,12 +2,13 @@
   padding-top: 26px;
 
   @media (min-width: $tablet) {
-    padding-top: 75px;
+    padding-top: 76px;
 
     overflow: hidden;
   }
 
   @media (min-width: $desktop) {
+    padding-top: 74px;
     padding-bottom: 85px;
   }
 }
