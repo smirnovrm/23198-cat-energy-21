@@ -22,7 +22,7 @@
   @media (min-width: $tablet) {
     width: 324px;
 
-    margin-bottom: 140px;
+    margin-bottom: 138px;
 
     padding-left: 36px;
     padding-right: 36px;
@@ -77,6 +77,14 @@
   }
 }
 
+.catalog-list__item picture {
+  margin-left: auto;
+
+  @media (min-width: $tablet) {
+    margin-left: initial;
+  }
+}
+
 .catalog-list__item:nth-child(7) {
   @media (min-width: $tablet) {
     margin-bottom: 0;
@@ -113,6 +121,67 @@
   }
 }
 
+.catalog-list__item:nth-child(2) .catalog-list__image--bigsize {
+  @media (min-width: $tablet) {
+    margin-top: -72px;
+    margin-left: -2px;
+
+    height: 207px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: -78px;
+
+
+    height: 200px;
+  }
+}
+
+.catalog-list__item:nth-child(2) .catalog-list__info {
+  @media (min-width: $tablet) {
+    margin-top: 24px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 37px;
+  }
+}
+
+.catalog-list__item:nth-child(3) .catalog-list__image {
+  @media (max-width: 767px) {
+    height: 78px;
+    margin-top: 22px;
+  }
+}
+
+.catalog-list__item:nth-child(3) .catalog-list__button {
+  @media (max-width: 767px) {
+    margin-top: 16px;
+  }
+}
+
+.catalog-list__item:nth-child(5) .catalog-list__image {
+  @media (max-width: 767px) {
+    height: 78px;
+    margin-top: 25px;
+  }
+}
+
+.catalog-list__item:nth-child(5) .catalog-list__button,
+.catalog-list__item:nth-child(7) .catalog-list__button {
+  @media (max-width: 767px) {
+    margin-top: 13px;
+  }
+}
+
+.catalog-list__item:nth-child(7) .catalog-list__image {
+  @media (max-width: 767px) {
+    width: 72px;
+    height: 84px;
+    margin-top: 19px;
+  }
+}
+
 .catalog-list__image {
   margin-top: 10px;
   margin-left: auto;
@@ -121,24 +190,26 @@
   height: 86px;
 
   @media (min-width: $tablet) {
-    margin-top: -45px;
+    margin-top: -72px;
     margin-left: initial;
 
-    width: 161px;
-    height: 172px;
+    width: 168px;
+    height: 200px;
   }
 
   @media (min-width: $desktop) {
-    margin-top: -52px;
+    margin-top: -77px;
 
-    width: 161px;
-    height: 172px;
+    width: 172px;
+    height: 196px;
   }
 }
 
 .catalog-list__image--bigsize {
   width: 84px;
   height: 101px;
+
+  margin-top: 6px;
 
   @media (min-width: $tablet) {
     margin-top: -73px;
@@ -168,12 +239,12 @@
   @media (min-width: $tablet) {
     width: 100%;
 
-    margin-top: 34px;
+    margin-top: 30px;
     margin-left: initial;
   }
 
   @media (min-width: $desktop) {
-    margin-top: 46px;
+    margin-top: 43px;
   }
 }
 
@@ -258,7 +329,7 @@
 .catalog-list__button {
   width: 100%;
 
-  margin-top: 22px;
+  margin-top: 21px;
 
   background-color: $basic-green;
 
