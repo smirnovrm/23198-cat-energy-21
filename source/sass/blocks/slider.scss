@@ -168,12 +168,12 @@
     }
 
     &:hover::after {
-        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     }
 
     &:active::after {
       border-color: $basic-green;
-      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
   }
 }
