@@ -123,6 +123,8 @@
 
   background-color: $basic-white;
 
+  cursor: pointer;
+
   &::after {
     content: "";
 
@@ -164,6 +166,15 @@
 
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     }
+
+    &:hover::after {
+        filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active::after {
+      border-color: $basic-green;
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+    }
   }
 }
 
@@ -173,5 +184,13 @@
     line-height: 30px;
 
     border-bottom: 1px dotted $special-gray;
+  }
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  &:active {
+    border-bottom-style: none;
   }
 }

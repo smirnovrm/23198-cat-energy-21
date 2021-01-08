@@ -346,6 +346,14 @@
     margin-top: 34px;
     margin-left: -4px;
   }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }
 
 .catalog-list__button--more {
@@ -362,5 +370,13 @@
   @media (min-width: $desktop) {
     margin-left: -3px;
     margin-bottom: 1px;
+  }
+
+  &:hover {
+    background-color: $special-gray-2;
+  }
+
+  &:active {
+    color: rgba($special-dark-gray, 0.3);
   }
 }

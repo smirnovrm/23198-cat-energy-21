@@ -26,6 +26,7 @@
 
 .copyright__link {
   margin-top: 3px;
+  fill: $special-icon-gray;
 
   @media (min-width: $tablet) {
     margin-top: 2px;
@@ -35,6 +36,14 @@
   @media (min-width: $desktop) {
     margin-top: 4px;
     margin-right: 0;
+  }
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    fill: rgba($basic-green, 0.3);
   }
 }
 

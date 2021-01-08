@@ -182,4 +182,13 @@
     margin-top: 51px;
     margin-left: 80px;
   }
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
+
 }
