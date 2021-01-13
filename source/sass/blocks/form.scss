@@ -225,11 +225,19 @@
 }
 
 .form__fieldset:nth-child(2) .form__label {
-  color: $special-dark-gray-2;
+  color: $special-gray;
 
   @media (min-width: $desktop) {
     min-height: 40px;
   }
+}
+
+.form__fieldset:nth-child(2) .form__text {
+  color: $special-dark-gray-2;
+}
+
+.form__fieldset:nth-child(2) .form__label:hover {
+  color: #bababa;
 }
 
 .form__programm .form__wrapper {
@@ -278,7 +286,15 @@
 }
 
 .form__fieldset:nth-child(4) .form__label {
+  color: $special-gray;
+}
+
+.form__fieldset:nth-child(4) .form__text {
   color: $basic-dark;
+}
+
+.form__fieldset:nth-child(4) .form__label:hover {
+  color: #bababa;
 }
 
 .form__label + .form__label {
@@ -292,6 +308,15 @@
 .form__fieldset:nth-child(4) .form__label + .form__label {
   @media (min-width: $tablet) {
     margin-top: 0;
+  }
+}
+
+.form__contact .form__label-contact:nth-of-type(1),
+.form__contact .form__label-contact:nth-of-type(2) {
+  color: $special-dark-gray;
+
+  &:hover {
+    color: $special-dark-gray;
   }
 }
 
@@ -491,20 +516,23 @@
 
   &:hover {
     border-color: #cdcdcd;
+    outline: 0;
   }
 
   &:focus {
-    outline: none;
+    outline: 1px solid $special-dark-gray;
     border-color: $special-dark-gray;
   }
 
   &:disabled {
     border-color: $special-dark-gray;
+    outline: 1px solid $special-dark-gray;
   }
 }
 
 .form__input-text--error {
   border-color: $error-color;
+  outline: 1px solid $error-color;
 }
 
 .form__input-text--icon-mail {
@@ -574,7 +602,7 @@
 }
 
 .form__input-radio {
-  display: none;
+  // display: none;
 
   margin-right: 15px;
 
@@ -673,11 +701,12 @@
   }
 
   &:focus {
-    outline: none;
+    outline: 1px solid $special-dark-gray;
     border-color: $special-dark-gray;
   }
 
   &:disabled {
+    outline: 1px solid $special-dark-gray;
     border-color: $special-dark-gray;
   }
 }

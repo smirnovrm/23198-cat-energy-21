@@ -3,7 +3,12 @@
 
   background-color: $basic-white;
 
-  width: 100%;
+  width: 320px;
+
+  @media (max-width: 767px) {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
 
   @media (min-width: $tablet) {
     display: flex;

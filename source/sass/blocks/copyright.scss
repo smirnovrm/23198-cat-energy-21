@@ -25,10 +25,21 @@
 }
 
 .copyright__link {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   margin-top: 3px;
+
   fill: $special-icon-gray;
 
+  text-decoration: none;
+
   @media (min-width: $tablet) {
+    max-width: 165px;
+
     margin-top: 2px;
     margin-right: 2px;
   }
@@ -43,7 +54,8 @@
   }
 
   &:active {
-    fill: rgba($basic-green, 0.3);
+    // fill: rgba($basic-green, 0.3);
+    opacity: 0.3;
   }
 }
 

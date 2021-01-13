@@ -43,6 +43,20 @@ const styles = () => {
 
 exports.styles = styles;
 
+const source = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(rename("style.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.source = source;
+
 // Scripts
 
 const scripts = () => {
@@ -151,6 +165,7 @@ exports.build = gulp.series(
   gulp.parallel(
     html,
     styles,
+    source,
     scripts,
     copy,
     images,
@@ -164,6 +179,7 @@ exports.default = gulp.series(
   gulp.parallel(
     html,
     styles,
+    source,
     scripts,
     copy,
     createWebp,

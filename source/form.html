@@ -16,24 +16,24 @@
   <body class="page__body">
     <header class="page-header page-header--inner">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="/">
+        <a class="page-header__logo logo" href="/" tabindex="1" aria-label="Перейти на главную страницу CatEnergy">
           <picture>
             <source media="(min-width: 1330px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
             <img class="logo__images logo__images--picture" src="img/logo.svg" width="190" height="38" alt="">
           </picture>
         </a>
-        <button class="page-header__toogle button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="page-header__navigation main-menu">
+        <button class="page-header__toogle page-header__toogle--nojs button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="page-header__navigation main-menu main-menu--nojs">
           <ul class="main-menu__list menu-list">
             <li class="menu-list__item menu-list__item--inner">
-              <a href="index.html">Главная</a>
+              <a href="index.html" tabindex="1">Главная</a>
             </li>
             <li class="menu-list__item menu-list__item--inner">
-              <a href="catalog.html">Каталог продукции</a>
+              <a href="catalog.html" tabindex="1">Каталог продукции</a>
             </li>
             <li class="menu-list__item menu-list__item--inner menu-list__item--inner-active">
-              <a>Подбор программы</a>
+              <a tabindex="1">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -50,13 +50,13 @@
             <legend class="visually-hidden">Информация о питомце</legend>
             <div class="form__wrapper">
               <label class="form__label" for="pet_name">Имя:<sup class="form__required">*</sup>
-                <input class="form__input-text" name="pet_name" id='pet_name' type="text" value="Барсик" required>
+                <input class="form__input-text" name="pet_name" id='pet_name' type="text" value="Барсик" tabindex="1" required>
               </label>
               <label class="form__label" for="pet_weight">Вес (кг):<sup class="form__required">*</sup>
-                <input class="form__input-text" name="pet_weight" id='pet_weight' type="text" value="7" required>
+                <input class="form__input-text" name="pet_weight" id='pet_weight' type="text" value="7" tabindex="1" required>
               </label>
               <label class="form__label" for="pet_age">Возраст (лет):
-                <input class="form__input-text" name="pet_age" id='pet_age' type="text" value="7">
+                <input class="form__input-text" name="pet_age" id='pet_age' type="text" value="7" tabindex="1">
               </label>
             </div>
           </fieldset>
@@ -64,36 +64,36 @@
             <legend class="visually-hidden">Выбор программы</legend>
             <div class="form__wrapper">
               <div class="form__inner-wrapper">
-                <label class="form__label form__label--disabled" for='slim'>
-                  <input class="form__input-radio form__input-radio--checked" type="radio" name='programm' id='slim'
-                  value="slim" checked disabled>
+                <label class="form__label form__label--disabled" for="slim" tabindex="1">
+                  <input class="form__input-radio visually-hidden form__input-radio--checked" type="radio" name='programm' id='slim'
+                  value="slim" tabindex="1" checked disabled>
                   <svg class="form__radio form__radio--on" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-on"></use>
                   </svg>
                   <svg class="form__radio form__radio--off" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-off"></use>
                   </svg>
-                  Похудение
+                  <span class="form__text">Похудение</span>
                 </label>
-                <label class="form__label" for='weight'>
-                  <input class="form__input-radio" type="radio" name='programm' id='weight' value="weight">
+                <label class="form__label" for="weight" tabindex="1">
+                  <input class="form__input-radio visually-hidden" type="radio" name='programm' id='weight' value="weight" tabindex="1">
                   <svg class="form__radio form__radio--on" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-on"></use>
                   </svg>
                   <svg class="form__radio form__radio--off" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-off"></use>
                   </svg>
-                  Набор массы
+                  <span class="form__text">Набор массы</span>
                 </label>
-                <label class="form__label" for='no_programm'>
-                  <input class="form__input-radio" type="radio" name='programm' id='no_programm' value="no_programm">
+                <label class="form__label" for="no_programm" tabindex="1">
+                  <input class="form__input-radio visually-hidden" type="radio" name='programm' id='no_programm' value="no_programm" tabindex="1">
                   <svg class="form__radio form__radio--on" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-on"></use>
                   </svg>
                   <svg class="form__radio form__radio--off" width="30" height="31">
                     <use xlink:href="img/sprite.svg#radio-off"></use>
                   </svg>
-                  Не знаю (Нужен ваш совет)
+                  <span class="form__text">Не знаю (Нужен ваш совет)</span>
                 </label>
               </div>
             </div>
@@ -102,13 +102,13 @@
         <fieldset class="form__fieldset form__fieldset--with-title form__contact">
           <legend class="form__legend"><span class="form__legend-text form__legend-text--contact">Контактные данные (владельца кота)</span></legend>
           <div class="form__wrapper">
-            <label class="form__label" for="email">E-mail:<sup class="form__required">*</sup>
+            <label class="form__label form__label-contact" for="email">E-mail:<sup class="form__required">*</sup>
               <input class="form__input-text form__input-text--icon-mail form__input-text--error" name="email" id='email' type="email"
-              value="kuklachev@gmail.com" required>
+              value="kuklachev@gmail.com" tabindex="1" required>
             </label>
-            <label class="form__label" for="phone">Телефон:<sup class="form__required">*</sup>
+            <label class="form__label form__label-contact" for="phone">Телефон:<sup class="form__required">*</sup>
               <input class="form__input-text form__input-text--icon-phone" name="phone" id='phone' type="text"
-              value="8 (960) 900-60-90" required disabled>
+              value="8 (960) 900-60-90" tabindex="1" required disabled>
             </label>
           </div>
         </fieldset>
@@ -116,13 +116,13 @@
           <legend class="form__legend"><span class="form__legend-text form__legend-text--comment">Комментарий</span></legend>
           <div class="form__wrapper">
             <textarea class="form__textarea" name="comment" cols="30"
-              rows="10">Расскажите обо всех повадках кота</textarea>
+              rows="10" tabindex="1">Расскажите обо всех повадках кота</textarea>
           </div>
         </fieldset>
         <fieldset class="form__fieldset form__fieldset--with-title form__additional">
           <legend class="form__legend"><span class="form__legend-text form__legend-text--additional">Дополнительно</span></legend>
           <div class="form__wrapper">
-            <label class="form__label" for="sweetener">
+            <label class="form__label" for="sweetener" tabindex="1">
               <input class="form__input-checkbox" type="checkbox" name="sweetener" id='sweetener' checked>
               <svg class="form__checkbox form__checkbox--on" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-on"></use>
@@ -130,9 +130,9 @@
               <svg class="form__checkbox form__checkbox--off" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-off"></use>
               </svg>
-              Сахарозаменитель
+              <span class="form__text">Сахарозаменитель</span>
             </label>
-            <label class="form__label form__label--disabled" for="drink_water">
+            <label class="form__label form__label--disabled" for="drink_water" tabindex="1">
               <input class="form__input-checkbox" type="checkbox" name="drink_water" id='drink_water' disabled>
               <svg class="form__checkbox form__checkbox--on" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-on"></use>
@@ -140,9 +140,9 @@
               <svg class="form__checkbox form__checkbox--off" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-off"></use>
               </svg>
-              Питьевая вода
+              <span class="form__text">Питьевая вода</span>
             </label>
-            <label class="form__label" for="milk">
+            <label class="form__label" for="milk" tabindex="1">
               <input class="form__input-checkbox" type="checkbox" name="milk" id='milk'>
               <svg class="form__checkbox form__checkbox--on" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-on"></use>
@@ -150,9 +150,9 @@
               <svg class="form__checkbox form__checkbox--off" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-off"></use>
               </svg>
-              Молоко
+              <span class="form__text">Молоко</span>
             </label>
-            <label class="form__label" for="vitamins">
+            <label class="form__label" for="vitamins" tabindex="1">
               <input class="form__input-checkbox" type="checkbox" name="vitamins" id='vitamins'>
               <svg class="form__checkbox form__checkbox--on" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-on"></use>
@@ -160,12 +160,12 @@
               <svg class="form__checkbox form__checkbox--off" width="30" height="30">
                 <use xlink:href="img/sprite.svg#checkbox-off"></use>
               </svg>
-              Витамины
+              <span class="form__text">Витамины</span>
             </label>
           </div>
         </fieldset>
         <div class="form__wrapper">
-          <button class="form__submit button" type="submit">Отправить заявку</button>
+          <button class="form__submit button" type="submit" tabindex="1">Отправить заявку</button>
           <span class="form__note"><sup class="form__required form__required--note">*</sup> <span>— Обязательные поля</span></span>
         </div>
       </form>
@@ -177,14 +177,14 @@
         </div>
         <div class="map-and-contact__map map">
           <span class="visually-hidden">Карта проезда к нашему магазину</span>
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5653.28439277209!2d30.316484026080015!3d59.93649179365066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1608106429900!5m2!1sru!2skz" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <!-- <img src="img/map.png" alt=""> -->
+          <iframe class="map__iframe map__iframe--nojs" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5653.28439277209!2d30.316484026080015!3d59.93649179365066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2skz!4v1608106429900!5m2!1sru!2skz" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="-1"></iframe>
+          <img class="map__image map__image--nojs" src="img/map.png" alt="">
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a class="page-footer__logo logo" href="https://htmlacademy.ru/" title="Cat Energy" aria-label="Cat Energy">
+        <a class="page-footer__logo logo" href="https://htmlacademy.ru/" title="Cat Energy" aria-label="Cat Energy" tabindex="1">
           <svg class="logo__images logo__images--text" width="128" height="24" role="img">
             <use xlink:href="img/sprite.svg#footer_logo"></use>
           </svg>
@@ -193,21 +193,21 @@
           <h3 class="visually-hidden">Социальные сети</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vk" href="" title="Вконтакте" aria-label="Вконтакте">
+              <a class="social__link social__link--vk" href="" title="Вконтакте" aria-label="Вконтакте" tabindex="1">
                 <svg role="img">
                   <use xlink:href="img/sprite.svg#vk_icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--insta" href="" title="Инстаграм" aria-label="Инстаграм">
+              <a class="social__link social__link--insta" href="" title="Инстаграм" aria-label="Инстаграм" tabindex="1">
                 <svg role="img">
                   <use xlink:href="img/sprite.svg#insta_icon"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--fb" href="" title="Фейсбук" aria-label="Фейсбук">
+              <a class="social__link social__link--fb" href="" title="Фейсбук" aria-label="Фейсбук" tabindex="1">
                 <svg role="img">
                   <use xlink:href="img/sprite.svg#facebook_icon"></use>
                 </svg>
@@ -217,8 +217,8 @@
         </section>
         <section class="page-footer__copyright copyright">
           <h3 class="visually-hidden">Авторские права</h3>
-          <span class="copyright__company">HTML Academy</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Сайт HTML Academy" aria-label="Сайт HTML Academy">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" title="Сайт HTML Academy" aria-label="Сайт HTML Academy" tabindex="1">
+            <span class="copyright__company">HTML Academy</span>
             <svg width="27" height="34" role="img">
               <use xlink:href="img/sprite.svg#academy_icon"></use>
             </svg>
@@ -226,5 +226,6 @@
         </section>
       </div>
     </footer>
+    <script src="js/app.min.js"></script>
   </body>
 </html>
